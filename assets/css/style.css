@@ -1,0 +1,91 @@
+/*Variables*/
+:root{
+    --primary-color: #B6E3FB;
+    --secondary-color: #708090;
+    --tertiary-color: #D25F2C;
+}
+/*end of variables*/
+/*"Overall styles"*/
+/*Universal styles*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+/*End of "Overall styles"*/
+
+/*Header styles*/
+header{
+    background-color: #708090;
+    color: var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+
+header nav{
+    width: 40%;
+}
+
+header nav ul{
+    flex: 1;
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li{
+    font-size: 150%;
+    flex:1;
+    text-align: center;
+}
+
+/*End of header styles*/
+
+/*Hero styles*/
+.hero{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.hero img{
+    width: 70%;
+}
+/*End of hero styles*/
+
+/*section styles*/
+.section-styles{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.4;
+    width: 90%;
+    margin-left: 5%;
+    padding-left: 5%;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+.section-styles h2{
+    width: 100%;
+    padding-left: 20%;
+    border-bottom: 5px solid var(--tertiary-color);
+    color: var(--primary-color);
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+}
+/*End of section styles*/
+
+/*Skills section styles*/
+.skills div{
+    display: flex;
+    justify-content: space-around;
+}
+.skills div img, .skills div svg {
+    height: 200px;
+    width: 200px;
+}
+/*End of skills section styles*/
