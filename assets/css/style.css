@@ -95,16 +95,18 @@ header nav ul li{
 /*End of section styles*/
 
 /*Skills section styles*/
-.skills div{
+.skills{
+    width: 90%;
+}
+
+.image-container{
     display: flex;
     justify-content: space-around;
     margin-bottom: 15px;
 }
 
-.skills{
-    width: 90%;
-}
-.skills div img, .skills div svg {
+
+.skills div img {
     height: 200px;
     width: 200px;
 }
