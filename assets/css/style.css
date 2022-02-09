@@ -75,7 +75,7 @@ header nav ul li{
 .section-styles{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1.4;
-    margin-bottom: 15px;
+    margin-bottom: 2.174%;
     background-color: var(--secondary-color);
     border-radius: 11px;
 }
@@ -100,6 +100,7 @@ header nav ul li{
 /*SKILLS SECTION STYLES*/
 .skills{
     margin-left: 5%;
+    margin-bottom: 2.174%;
     width: 25%;
 }
 
@@ -107,7 +108,6 @@ header nav ul li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 15px;
     width:100%;
 }
 
@@ -119,7 +119,7 @@ header nav ul li{
 
 /*PROJECTS SECTION STYLES*/
 .projects{
-    margin: 0 3%;
+    margin: 0 3% 2.174%;
 }
 
 .screenshots{
@@ -148,6 +148,20 @@ header nav ul li{
     padding: 3px;
     text-align: center;
 }
+/*END OF PROJECTS SECTION STYLES */
+
+/*CONTACT ME STYLES*/
+.contact-me{
+    width: 100%;
+    margin: 0 3% 2.174%;
+}
+.contact-me div{
+    margin-top: 1%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+/*END OF CONTACT ME STYLES*/
 
 /* 
 @media only screen and (){
