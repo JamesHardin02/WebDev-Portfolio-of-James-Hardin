@@ -1,26 +1,27 @@
-/*Variables*/
+/*VARIABLES*/
 :root{
     --primary-color: #B6E3FB;
     --secondary-color: #708090;
     --tertiary-color: #D25F2C;
 }
-/*end of variables*/
-/*"Overall styles"*/
+/*END OF VARIABLES*/
+
+/*"OVERALL STYLES"*/
 /*Universal styles*/
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
-
+/* Hyoerlink styles */
 a{
     color: var(--primary-color);
     text-decoration: none;
 }
-/*End of "Overall styles"*/
+/*END OF "OVERALL STYLES"*/
 
-/*Header styles*/
-header{
+/*HEADER STYLES*/
+header {
     background-color: #708090;
     color: var(--primary-color);
     display: flex;
@@ -30,29 +31,26 @@ header{
 }
 
 header h1{
-    padding-right: 25px;
+    /* flex: 1, 1; */
+    margin: 0px, 10px;
 }
 
-
 header nav{
-    flex: 1;
-    width: 40%;
+    /* flex: 2, 1; */
+    width: 60%;
 }
 
 header nav ul{
-    flex: 1;
-    display: flex;
     list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 header nav ul li{
-    font-size: 150%;
-    flex:1;
-    text-align: center;
-    padding-right: 25px;
+    font-size: 1.4rem;
 }
-
-/*End of header styles*/
+/*END OF HEADER STYLES*/
 
 /*Hero styles*/
 .hero{
@@ -77,7 +75,7 @@ header nav ul li{
 .section-styles{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1.4;
-    width: 90%;
+    /* width: 90%; */
     /* margin-left: 5%; */
     margin-bottom: 15px;
     /* padding-left: 5%; */
@@ -94,27 +92,32 @@ header nav ul li{
 /*End of section styles*/
 /*About-me*/
 .about-me{
-    width: 55%;
+    width: 60%;
+    margin-left: 3%;
+    align-items: flex-start;
 }
 
 /*End of about-me*/
 /*Skills section styles*/
 .skills{
-    width: 45%;
-    flex: 1
+    margin-left: 5%;
+    width: 25%;
 }
 
 .image-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
     margin-bottom: 15px;
-    /* margin-right: 10% */
+    width:100%;
 }
 
 .image-container img {
-    height: 25%;
-    width: 25%;
+    height: 50%;
+    width: 50%;
 }
 /*End of skills section styles*/
+/* 
+@media only screen and (){
+    
+} */
