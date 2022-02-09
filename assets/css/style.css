@@ -93,8 +93,18 @@ header nav ul li{
     width: 60%;
     margin-left: 3%;
     align-items: flex-start;
+    display: flex;
+    flex-direction: column;
 }
-
+.about-me div p{
+    flex: 1, 1 auto;
+}
+.about-me img{
+    margin: 1% 0;
+    align-self: center;
+    width: 25%;
+    border: 5px ridge var(--primary-color)
+}
 /*END OF ABOUT ME STYLES*/
 
 /*SKILLS SECTION STYLES*/
