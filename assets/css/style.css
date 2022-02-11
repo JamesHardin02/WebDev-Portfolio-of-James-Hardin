@@ -230,7 +230,17 @@ header nav ul li{
     margin-top: 1%;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+#gmail-figure a img{
+    /* margin-left: 18%; */
+}
+
+.contact-me > div > figure > figcaption{
+    font-size: 1.3em;
+    text-align: center;
+    color: var(--primary-color);
 }
 /*END OF CONTACT ME STYLES*/
 
