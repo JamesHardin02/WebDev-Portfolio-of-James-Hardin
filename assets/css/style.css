@@ -17,6 +17,11 @@
 a{
     color: var(--primary-color);
     text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover, .sidepanel a:hover {
+    color: #f1f1f1;
 }
 /*END OF "OVERALL STYLES"*/
 
@@ -52,15 +57,70 @@ header nav ul li{
 }
 /*END OF HEADER STYLES*/
 
+/* COLLAPSABLE SIDEPANEL */
+/* The sidepanel menu */
+.sidepanel {
+    height: 0; /*Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: -webkit-sticky;
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: var(--secondary-color); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 0; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+  /* The sidepanel links */
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    font-size: 25px;
+    color: var(--primary-color);
+    display: block;
+}
+
+  /* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+  /* Style the button that is used to open the sidepanel */
+.openbtn {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    font-size: 20px;
+    cursor: pointer;
+    background-color:var(--secondary-color);
+    color: var(--primary-color);
+    padding: .967% 1.45%;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: var(--tertiary-color);
+    color:#f1f1f1;
+}
+/* END OF COLLAPSABLE SIDEPANEL */
+
 /*HERO STYLES*/
 .hero{
     background-color: white;
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 
 .hero img{
     width: 70%;
+    z-index: 2;
 }
 /*END OF HERO STYLES*/
 
@@ -98,6 +158,7 @@ header nav ul li{
 }
 .about-me div p{
     flex: 1, 1 auto;
+    padding: 0 2.5%;
 }
 .about-me img{
     margin: 1% 0;

@@ -10,6 +10,9 @@
         <!--CSS Styles -->
         <link rel="stylesheet" href="./assets/css/style.css" />
 
+        <!--JS script -->
+        <script src="./assets/js/sidepanel.js"></script>
+
         <title>Full-Stack Portfolio┃James Hardin-Web Developer</title>
     </head>
     <!-- END OF HEAD -->
@@ -17,7 +20,7 @@
 
         <!--HEADER: very top of the webpage-->
         <header>
-            <h1 id="top-page"><a href="#top-page">James Hardin┃Full-Stack Portfolio</a></h1>
+            <h1 id="top-page">James Hardin┃Full-Stack Portfolio</h1>
             <nav>
                 <ul>
                     <li><a href="#about-me">About Me</a></li>
@@ -28,6 +31,19 @@
             </nav>
         </header>
         <!--END OF HEADER-->
+
+        <!-- COLLAPSABLE SIDEPANEL -->
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#top-page">Top of page</a>
+            <a href="#about-me">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact-me">Contact Me</a>
+        </div>
+        
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <!-- END OF COLLAPSABLE SIDEPANEL -->
 
         <!--HERO: gif of full stack developer-->
         <div class="hero"><img src="./assets/images/hero-gif.gif" alt="Animation of a full stack web developer working" /></div>
