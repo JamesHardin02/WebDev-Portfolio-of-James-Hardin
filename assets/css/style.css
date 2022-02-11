@@ -10,18 +10,38 @@
 /*Universal styles*/
 *{
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
-/* Hyoerlink styles */
+/* Hyperlink styles */
+h1{
+    font-size: 3.3rem;
+}
+
+p{
+    font-size: 1.7rem;
+}
+
 a{
     color: var(--primary-color);
+    font-size: 2.5rem;
     text-decoration: none;
     transition: 0.3s;
 }
 
+a:not(nav a){
+    font-size: 2rem;
+}
+
 a:hover, .sidepanel a:hover {
     color: #f1f1f1;
+}
+
+.standard-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 /*END OF "OVERALL STYLES"*/
 
@@ -29,19 +49,14 @@ a:hover, .sidepanel a:hover {
 header {
     background-color: #708090;
     color: var(--primary-color);
+    /* standard flex */
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-header h1{
-    /* flex: 1, 1; */
-    margin: 0px, 10px;
-}
-
 header nav{
-    /* flex: 2, 1; */
     width: 60%;
 }
 
@@ -71,23 +86,24 @@ header nav ul li{
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 0; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
   /* The sidepanel links */
 .sidepanel a {
-    padding: 8px 8px 8px 32px;
-    font-size: 25px;
+    padding: 3.5% 3.5% 3.5% 10%;
+    font-size: 170%;
     color: var(--primary-color);
-    display: block;
 }
 
   /* Position and style the close button (top right corner) */
 .sidepanel .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+    right: 2.4%;
+    font-size: 245%;
 }
 
   /* Style the button that is used to open the sidepanel */
@@ -140,6 +156,7 @@ header nav ul li{
     border-radius: 11px;
 }
 .section-styles h2{
+    font-size: 2.5rem;
     width: 100%;
     padding-left: 20%;
     border-bottom: 5px solid var(--tertiary-color);
@@ -198,10 +215,37 @@ header nav ul li{
     justify-content: space-between;
 }
 
-.screenshots p{ 
-    font-size: 1.4rem;
+.screenshots-rb{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.screenshots p, .screenshots-rb p{ 
+    font-size: 2rem;
     margin-left: 5%;
     align-self: center;
+}
+
+.screenshots-rb p{
+    text-align: center;
+}
+
+.screenshots-rb figure{
+    width: 65%;
+    align-self: center;
+}
+
+.screenshots-rb figure a img{
+    width: 100%;
+}
+
+.screenshots-rb figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
 }
 
 .screenshots figure{
