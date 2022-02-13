@@ -3,6 +3,7 @@
     --primary-color: #B6E3FB;
     --secondary-color: #708090;
     --tertiary-color: #D25F2C;
+    --figcaptionBG-color: #D25F2C88;
 }
 /*END OF VARIABLES*/
 
@@ -13,15 +14,13 @@
     margin: 0;
     padding: 0;
 }
-/* Hyperlink styles */
-h1{
-    font-size: 3.3rem;
-}
 
+/* paragraph font size */
 p{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
+/* Hyperlink styles */
 a{
     color: var(--primary-color);
     font-size: 2.5rem;
@@ -29,14 +28,22 @@ a{
     transition: 0.3s;
 }
 
-a:not(nav a){
+/* Styling for hyperlinks not in the header */
+a:not(header a){
     font-size: 2rem;
 }
 
+/* Color change when hovering over hyperlinks */
 a:hover, .sidepanel a:hover {
     color: #f1f1f1;
 }
 
+/* Top heading font size */
+h1{
+    font-size: 3.3rem;
+}
+
+/* POSSIBLE utitlity flexbox class */
 .standard-flex{
     display: flex;
     flex-wrap: wrap;
@@ -83,19 +90,21 @@ header nav ul li{
     top: 0;
     left: 0;
     background-color: var(--secondary-color); /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 0; /* Place content 60px from the top */
+    overflow: hidden; /* Disable horizontal scroll */
+    padding-top: .5%; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-  /* The sidepanel links */
 .sidepanel a {
     padding: 3.5% 3.5% 3.5% 10%;
-    font-size: 170%;
     color: var(--primary-color);
+}
+
+.sidepanel li{
+    font-size: 3rem;
 }
 
   /* Position and style the close button (top right corner) */
@@ -103,7 +112,7 @@ header nav ul li{
     position: absolute;
     top: 0;
     right: 2.4%;
-    font-size: 245%;
+    font-size: 3rem;
 }
 
   /* Style the button that is used to open the sidepanel */
@@ -112,11 +121,11 @@ header nav ul li{
     position: sticky;
     top: 0;
     z-index: 999;
-    font-size: 20px;
+    font-size:30px;
     cursor: pointer;
     background-color:var(--secondary-color);
     color: var(--primary-color);
-    padding: .967% 1.45%;
+    padding: 15px 20px;
     border: none;
 }
 
@@ -200,8 +209,8 @@ header nav ul li{
 }
 
 .image-container img {
-    height: 50%;
-    width: 50%;
+    height: 45%;
+    width: 45%;
 }
 /*END OF SKILLS SECTION STYLES*/
 
@@ -222,10 +231,19 @@ header nav ul li{
 }
 
 .screenshots p, .screenshots-rb p{ 
-    font-size: 1.4rem;
+    line-height: 1.73rem;
     align-self: center;
     width: 70%;
     text-align: center;
+    margin-top: .7%;
+}
+
+.screenshots-rb p, .screenshots figure{
+    margin-bottom: 1%;
+}
+
+.screenshots-rb img, .screenshots img{
+    border: 7px solid ;
 }
 
 .screenshots-rb figure{
@@ -233,12 +251,14 @@ header nav ul li{
     align-self: center;
 }
 
-.screenshots-rb figure a img{
+.screenshots-rb figure a img, .screenshots figure a img{
     width: 100%;
 }
 
-.screenshots-rb figcaption {
-    background-color: #222;
+.screenshots-rb figcaption, .screenshots figcaption {
+    margin-top: 0;
+    border: 5px solid var(--tertiary-color);
+    background-color: var(--figcaptionBG-color);
     color: #fff;
     font: italic smaller sans-serif;
     padding: 3px;
@@ -259,16 +279,8 @@ header nav ul li{
     width: 50%;
 }
 
-.screenshots figure a img{
+{
     width: 100%;
-}
-
-.screenshots figcaption {
-    background-color: #222;
-    color: #fff;
-    font: italic smaller sans-serif;
-    padding: 3px;
-    text-align: center;
 }
 /*END OF PROJECTS SECTION STYLES */
 
