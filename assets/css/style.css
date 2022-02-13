@@ -19,7 +19,7 @@ h1{
 }
 
 p{
-    font-size: 1.7rem;
+    font-size: 1.4rem;
 }
 
 a{
@@ -57,7 +57,7 @@ header {
 }
 
 header nav{
-    width: 60%;
+    width: 65%;
 }
 
 header nav ul{
@@ -222,12 +222,9 @@ header nav ul li{
 }
 
 .screenshots p, .screenshots-rb p{ 
-    font-size: 2rem;
-    margin-left: 5%;
+    font-size: 1.4rem;
     align-self: center;
-}
-
-.screenshots-rb p{
+    width: 70%;
     text-align: center;
 }
 
@@ -246,6 +243,16 @@ header nav ul li{
     font: italic smaller sans-serif;
     padding: 3px;
     text-align: center;
+}
+
+.screenshots{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.screenshots p{
+    width: fit-content;
+    margin-left: 5%;
 }
 
 .screenshots figure{
