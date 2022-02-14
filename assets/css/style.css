@@ -284,10 +284,58 @@ header nav ul li{
 .contact-me figcaption{
     font-size: 1.3em;
     color: var(--primary-color);
+    width: fit-content;
 }
 /*END OF CONTACT ME STYLES*/
 
-/* 
-@media only screen and (){
-    
-} */
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    .about-me {
+        width: 100%;
+    }
+
+    /* SKILLS section*/
+    .skills{
+        width: 100%;
+    }
+
+    .image-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .image-container img{
+        width: 20%;
+        height: 20%;
+    }
+    /* END SKILLS section */
+
+    /* PROJECTS section */
+    .screenshots-rb figure{
+        width: 85%;
+    }
+
+    .screenshots figure{
+        width: 65%;
+    }
+    /* END PROJECTS section */
+
+
+}
+
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    header h1 {
+      /* this will be applied on any screen between 768px and 575px */
+        color:tomato;
+    }
+}
+
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    header h1 {
+      /* this will be applied on any screen smaller than 575px */
+        font-size: 100px;
+    }
+}
