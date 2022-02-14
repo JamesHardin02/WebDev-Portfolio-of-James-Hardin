@@ -1,11 +1,11 @@
-/* Set the width of the sidebar to 250px (show it) */
+// sets the height and width of side panel when clicked
 function openNav() {
-    document.getElementById("mySidepanel").style.width = "250px";
-    document.getElementById("mySidepanel").style.height = "315px";
+    document.getElementById("sidepanel").style.width = "250px";
+    document.getElementById("sidepanel").style.height = "315px";
 }
 
-  /* Set the width of the sidebar to 0 (hide it) */
+// sets the height and width to 0(hidden) when close button is clicked
 function closeNav() {
-    document.getElementById("mySidepanel").style.width = "0";
-    document.getElementById("mySidepanel").style.height = "0";
+    document.getElementById("sidepanel").style.width = "0";
+    document.getElementById("sidepanel").style.height = "0";
 }

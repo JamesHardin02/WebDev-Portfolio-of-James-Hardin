@@ -22,7 +22,7 @@
         <header>
             <h1 id="top-page">James Hardin┃Full-Stack Portfolio</h1>
             <nav>
-                <ul>
+                <ul class="flex-even">
                     <li><a href="#about-me">About Me</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
@@ -33,7 +33,7 @@
         <!--END OF HEADER-->
 
         <!-- COLLAPSABLE SIDEPANEL -->
-        <div id="mySidepanel" class="sidepanel">
+        <div id="sidepanel" class="sidepanel">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <nav>
                 <ul>
@@ -73,8 +73,8 @@
         <!--END OF ABOUT ME section-->
 
         <!--SKILLS section: logos of the languages I am proficient in-->
-        <section id="skills" class="skills">
-            <div class="section-styles"><h2>Skills</h2></div>
+        <section id="skills" class="section-styles skills">
+            <h2 class="skills-h2">Skills</h2>
             <div class="image-container">
                 <img src="./assets/images/html5-logo.png" alt="HTML 5 logo" />
                 <img src="./assets/images/css3-logo.png" alt="CSS 3 logo" />
@@ -90,15 +90,16 @@
             <!-- Run Buddy project -->
             <section class="screenshots-rb">
                 <!--linked image of Run Buddy-->
-                <p>
-                    Run Buddy github repo: <a href="https://github.com/JamesHardin02/run-buddy.git" target="_blank">Run Buddy</a>
-                </p>
+                
                 <figure>
                     <a href="https://jameshardin02.github.io/run-buddy/" target="_blank">
                         <img src="./assets/images/run-buddy-screenshot.png" alt="front page of the Run Buddy wedpage" />
-                        <figcaption>Click screenshot to view page</figcaption>
+                        <figcaption>Run Buddy | HTML CSS</figcaption>
                     </a>
                 </figure>
+                <p>
+                    GitHub repository: <a href="https://github.com/JamesHardin02/run-buddy.git" target="_blank">Run Buddy</a>
+                </p>
                 <p>
                     Project description:<br/>
                     The Run Buddy landing page exemplifies quientessential landing page
@@ -109,7 +110,7 @@
             <!-- END OF Run Buddy Project -->
 
             <!-- Placeholder -->
-            <section class="screenshots">
+            <section class="screenshots flex-even">
                 <!--linked image of Run Buddy-->
                 <p>
                     More projects coming soon! <a href="#" target="_blank"></a>
@@ -117,14 +118,14 @@
                 <figure>
                     <a href="#" target="_blank">
                         <img src="https://via.placeholder.com/468x60?text=More+projects+coming+soon!" alt="Placeholder which states more projects are coming soon" />
-                        <figcaption>Click screenshot to view page</figcaption>
+                        <figcaption>More projects coming soon!</figcaption>
                     </a>
                 </figure>
             </section>
             <!-- END OF Placeholder -->
 
             <!-- Placeholder -->
-            <section class="screenshots">
+            <section class="screenshots flex-even">
                 <!--linked image of Run Buddy-->
                 <p>
                     More projects coming soon! <a href="#" target="_blank"></a>
@@ -132,7 +133,7 @@
                 <figure>
                     <a href="#" target="_blank">
                         <img src="https://via.placeholder.com/468x60?text=More+projects+coming+soon!" alt="Placeholder which states more projects are coming soon" />
-                        <figcaption>Click screenshot to view page</figcaption>
+                        <figcaption>More projects coming soon!</figcaption>
                     </a>
                 </figure>
             </section>
@@ -145,7 +146,7 @@
         <section id="contact-me" class="section-styles contact-me">
             <h2>Contact Me</h2>
             <!-- GitHub -->
-            <div>
+            <div class="flex-even">
                 <figure>
                     <a href="https://github.com/JamesHardin02" target="_blank">
                         <img src="./assets/images/github-icon.png" alt="GitHub icon" />
