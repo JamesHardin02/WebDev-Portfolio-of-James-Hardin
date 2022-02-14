@@ -396,8 +396,9 @@ header nav ul li{
 
     /* ABOUT ME */
     .about-me img{
-        float: left;
+        width: 50%;
     }
+
     /* END OF ABOUT ME */
 
     /* SKILLS */
