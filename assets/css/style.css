@@ -182,7 +182,7 @@ header nav ul li{
 .about-me img{
     margin: 1% 0;
     align-self: center;
-    width: 25%;
+    width: 35%;
     border: 5px ridge var(--primary-color)
 }
 
@@ -219,6 +219,10 @@ header nav ul li{
 /*PROJECTS SECTION STYLES*/
 /* .screenshots-rb is the Run Buddy project
     - the top most project (larger img. then the others)*/
+.projects{
+    width: 100%;
+}
+
 .screenshots-rb{
     display: flex;
     flex-direction: column;
@@ -275,21 +279,34 @@ header nav ul li{
     width: 100%;
 }
 
+.contact-me figcaption{
+    font-size: 1.3em;
+    color: var(--primary-color);
+    width: fit-content;
+    text-align: center;
+}
+
 #phone-figure{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.contact-me figcaption{
-    font-size: 1.3em;
-    color: var(--primary-color);
-    width: fit-content;
-}
+
 /*END OF CONTACT ME STYLES*/
 
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+/* MEDIA QUERIES */
+/*SMALL DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
+
+    header nav{
+        width: 85%;
+    }
+
+    .hero img{
+        width: 100%
+    }
+
     .about-me {
         width: 100%;
     }
@@ -320,22 +337,105 @@ header nav ul li{
         width: 65%;
     }
     /* END PROJECTS section */
+}
+/* END DESKTOP SCREENS */
 
+/* Keeps header hyperlinks from being too close 
+    and project images viewable*/
+@media screen and (max-width: 850px) {
+    h1{
+        font-size: 2.5rem;
+    }
+
+   /* Hyperlink styles */
+    header nav{
+        width: 100%;
+    }
+
+    
+    /* PROJECTS */
+    .screenshots-rb figure{
+        width: 95%;
+    }
+
+    .screenshots-rb p, .screenshots p{
+        margin-top: 1%;
+    }
+
+    .screenshots{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .screenshots figure{
+        width: 95%;
+        margin-top: 1%;
+    }
+    /* END OF PROJECTS */
 
 }
+/* END header and projects section edits */
 
-  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  /*TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-    header h1 {
-      /* this will be applied on any screen between 768px and 575px */
-        color:tomato;
+    /* HEADER */
+    header{
+        flex-wrap: nowrap;
     }
+    header nav{
+        width: 50%
+    }
+    header nav ul{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    header nav ul li a{
+        font-size: 2.15rem;
+    }
+    /*END OF HEADER */
+
+    /* ABOUT ME */
+    .about-me img{
+        float: left;
+    }
+    /* END OF ABOUT ME */
+
+    /* SKILLS */
+    .image-container img{
+        width: 35%;
+    }
+    /*END OF SKILLS */
+
+    /* CONTACT ME */
+    .contact-me div{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .contact-me figure{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    /* END OF CONTACT ME */
 }
 
-  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-    header h1 {
-      /* this will be applied on any screen smaller than 575px */
-        font-size: 100px;
+    /* HEADER */
+    header{
+        flex-wrap:wrap;
     }
-}
+
+    h1{
+        text-align: center;
+        margin-bottom: 1.5%;
+        border-bottom: 5px solid var(--tertiary-color);
+    }
+
+    header nav ul{
+        align-items: center;
+    }
+    /* END OF HEADER */
+
+
+} 
